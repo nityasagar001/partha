@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMA Partha Saradhi - Accounting & Business Consulting</title>
+    <style>
+        :root {
+            --primary-color: #5d2e8c;
+            --secondary-color: #f9c22e;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .hero {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2rem 0;
+            background-color: var(--light-bg);
+        }
+        
+        .hero-content {
+            flex: 1;
+            min-width: 300px;
+            padding: 1rem;
+        }
+        
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .profile-image {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            border: 6px solid var(--secondary-color);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            object-fit: cover;
+        }
+        
+        .services {
+            padding: 3rem 0;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .service-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        
+        .service-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .success-story {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 3rem 0;
+        }
+        
+        .story-container {
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .cta {
+            padding: 3rem 0;
+            text-align: center;
+            background-color: var(--light-bg);
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            font-weight: bold;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            margin-top: 1.5rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #edb61a;
+            transform: translateY(-3px);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--secondary-color);
+        }
+        
+        .footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column-reverse;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>CMA Partha Saradhi</h1>
+            <p>Accounting, Audit, and Business Consulting</p>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content container">
+            <h2>Expert Financial Solutions for Your Business</h2>
+            <p>With years of experience and specialized knowledge in accounting, audit, and business consulting, I help businesses streamline their financial operations and achieve compliance excellence.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQEmK9zC4mpaQA/profile-displayphoto-shrink_400_400/0/1727790274895?e=1751500800&v=beta&t=b-fpxBtJTqD6iko1Hw2DYeKRLjSlZRfVNqZ0cg6izyI" alt="CMA Partha Saradhi" class="profile-image">
+        </div>
+    </section>
+    
+    <section class="services container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Accounting Services</h3>
+                <p>Professional preparation and management of accounting records to ensure accuracy and compliance with standards.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🏢</div>
+                <h3>GST Registration & Filings</h3>
+                <p>Complete assistance with GST registration process and timely filing of GST returns.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">💼</div>
+                <h3>Income Tax & Audit</h3>
+                <p>Comprehensive income tax planning, preparation of returns, and audit services to minimize tax liabilities.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🔄</div>
+                <h3>Business Continuity Plans</h3>
+                <p>Strategic planning to ensure business operations continue smoothly despite unforeseen challenges.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🔍</div>
+                <h3>Internal & Stock Audit</h3>
+                <p>Thorough internal and stock audits to identify inefficiencies and ensure operational excellence.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">📝</div>
+                <h3>Detailed Project Reports</h3>
+                <p>Well-researched and comprehensive project reports to facilitate informed business decisions.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="success-story">
+        <div class="container">
+            <h2 class="section-title">Success Story</h2>
+            <div class="story-container">
+                <h3>End-to-End Business Support</h3>
+                <p>I helped a company right from its formation — streamlined accounts, managed GST filings, and implemented internal audit controls — resulting in a 20% reduction in operational errors and achieving timely statutory compliances within 90 days.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Looking to Grow Your Business?</h2>
+            <p>I'm seeking connections with entrepreneurs and SMEs needing end-to-end support for company formation, accounting, GST compliance, and audit services.</p>
+            <a href="#" class="btn">Connect With Me</a>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CMA Partha Saradhi. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
